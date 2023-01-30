@@ -26,6 +26,6 @@ jobs:
       
       run: dotnet restore API.csproj
     - name: Build
-      run: dotnet build --no-restore API.csproj
+      run: dotnet build --no-restore API/API/API.csproj
     - name: Test
-      run: dotnet test --no-build --verbosity normal API.csproj
+      run: dotnet test --no-build --verbosity normal API/API.csproj
