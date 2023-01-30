@@ -24,8 +24,8 @@ jobs:
       run: pwd
     - name: Restore dependencies
       
-      run: dotnet restore API.csproj
+      run: dotnet restore API/API.csproj
     - name: Build
-      run: dotnet build --no-restore API/API/API.csproj
+      run: dotnet build --no-restore API/API.csproj
     - name: Test
       run: dotnet test --no-build --verbosity normal API/API.csproj
